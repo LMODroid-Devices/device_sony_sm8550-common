@@ -30,7 +30,6 @@ function vendor_imports() {
         "vendor/qcom/opensource/commonsys/display",
         "vendor/qcom/opensource/commonsys-intf/display",
         "vendor/qcom/opensource/dataservices",
-        "vendor/sony/pdx234",
         "vendor/sony/sm8550-common",
 EOF
 }
@@ -84,7 +83,7 @@ function lib_to_package_fixup() {
 setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "pdx234"
+write_headers "pdx234 pdx237"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt"
